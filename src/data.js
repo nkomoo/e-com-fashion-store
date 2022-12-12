@@ -34,3 +34,26 @@ export const categories = [
   ];
 
 
+export const popularProducts = [
+    {
+      id:1,
+      img:"https://images.unsplash.com/photo-1617354839314-9476d4ca8a3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+      title:"Blue Jeans"
+    },
+    {
+      id:2,
+      img:"https://images.unsplash.com/photo-1610659838811-3fd76c67755e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+    title:"Jean Top"
+    },
+    {
+      id:3,
+      img:"https://images.unsplash.com/photo-1610659696455-059d5dbb8e53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    title:"Black Top"
+    },
+    {
+      id:4,
+      img:"https://images.unsplash.com/photo-1548615661-5d58be81cb9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      title:"White Boots"
+    },
+  ]
+    
