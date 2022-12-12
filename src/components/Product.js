@@ -44,6 +44,7 @@ align-items: center;
 justify-content: center;
 margin: 10px;
 transition: all .5s ease;
+cursor: pointer;
 
 &:hover{
     opacity: .3;
