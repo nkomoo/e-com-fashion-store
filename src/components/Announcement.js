@@ -10,14 +10,14 @@ justify-content: center;
 font-size: 14px;
 font-weight: bold;
 padding-top: 5px;
-font-family: 'Freizeit 120', sans-serif;
+font-family: 'Freizeit 130', sans-serif;
 
 `;
 
 function Announcement() {
   return (
     <Container>
-        Super deal coming before New Years!
+        Super deals coming before New Years!
     </Container>
   );
 };

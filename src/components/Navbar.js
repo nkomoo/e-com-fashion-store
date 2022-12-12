@@ -5,7 +5,8 @@ import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Container = styled.div`
- height: 40px;
+position: sticky;
+ height: 60px;
 color: black;
 `;
 
