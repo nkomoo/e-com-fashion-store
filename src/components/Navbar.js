@@ -18,7 +18,7 @@ justify-content: space-between;
 `;
 
 const Left = styled.div`
-flex: 1;
+flex: 2;
 display: flex;
 align-items: center;
 `;
@@ -66,6 +66,33 @@ margin-left: 25px;
 text-transform: uppercase;
 `;
 
+const Links = styled.div`
+display: flex;
+flex: 1;
+justify-content: center;
+align-items: center;
+padding-left: 20px;
+margin: 0;
+
+`;
+
+const NavList = styled.li`
+list-style: none;
+cursor: pointer;
+text-transform: uppercase;
+
+&:hover {
+    text-decoration: underline;
+}
+`;
+
+const BadgeStyle = {
+    "& .MuiBadge-badge": {
+    color: 'white',
+    backgroundColor: '#000000',
+  }
+}
+
 function Navbar() {
   return (
     <Container>
@@ -76,14 +103,19 @@ function Navbar() {
                     <Input />
                     <SearchIcon />
                 </SearchContainer>
+                <Links>
+                        <NavList>All Products</NavList>
+                </Links>
+                <Links>
+                        <NavList>About</NavList>
+                </Links>
             </Left>
-            <Center><Logo>CIAGA.</Logo></Center>
+            <Center><Logo>CIAGA</Logo></Center>
             <Right>
-
             <MenuItem>Register</MenuItem>
             <MenuItem>Sign In</MenuItem>
             <MenuItem> 
-            <Badge badgeContent={3} color="secondary">
+            <Badge badgeContent={3} color="secondary" sx={BadgeStyle} >
       <ShoppingCartIcon color="action" />
     </Badge>
             </MenuItem>
