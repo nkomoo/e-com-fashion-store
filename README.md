@@ -9,3 +9,5 @@ Made using the following:
 
 
 To view project simply **clone**, **cd** and then **npm start**
+
+Images in this project do not belong to me.
