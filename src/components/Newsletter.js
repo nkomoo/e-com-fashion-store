@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import SendIcon from '@mui/icons-material/Send';
+import {mobile} from '../Responsive';
 
 const Container = styled.div`
 height: 50vh;
@@ -15,6 +16,7 @@ flex-direction: column;
 const Title = styled.h1`
 font-size: 70px;
 margin-bottom: 20px;
+${mobile({fontSize:"40px"})}
 `;
 
 const InputContainer = styled.div`
@@ -24,6 +26,7 @@ background-color: grey;
 display: flex;
 justify-content: space-between;
 border: 1px solid lightgrey;
+${mobile({width:"80%"})}
 `;
 
 const Button = styled.button`
@@ -45,6 +48,7 @@ const Description = styled.div`
 font-size: 24px;
 font-weight: 300;
 margin-bottom: 15px;
+${mobile({textAlign:"center"})}
 `;
 
 const SmallParagraph = styled.div`
@@ -53,6 +57,7 @@ text-align: center;
 margin-left: 130px;
 margin-right: 130px;
 margin-bottom: 30px;
+${mobile({display:"none"})}
 `;
 
 

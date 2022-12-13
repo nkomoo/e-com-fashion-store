@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import {mobile} from '../Responsive';
 
 const Container = styled.div`
 display: flex;
-height: 60vh;
+height: 100%;
 background-color: rgb(238,237,237);
+${mobile({flexDirection:"column", textAlign: "center"})}
 `;
 
 const Left = styled.div`
@@ -22,28 +24,26 @@ padding: 20px;
 const Center = styled.div`
 flex: 1;
 padding: 20px;
+${mobile({display:"none"})}
 `;
 
-const Logo = styled.h1`
-
-`;
-
-const Desc = styled.p`
-margin: 20px 0px;
-`;
 
 const SocialContainer = styled.div`
 display: flex;
+${mobile({alignItems:"center",justifyContent:"center"})}
 `;
 
 const SocialIcon = styled.div`
 width: 40px;
 height: 40px;
 border-radius: 50%;
+
 `;
 
 const Title = styled.h3`
 margin-bottom: 30px;
+font-weight: 400;
+text-transform: uppercase;
 `;
 
 const List = styled.ul`
@@ -51,12 +51,14 @@ margin: 0;
 padding: 0;
 list-style: none;
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
+${mobile({placeItems:"center"})}
 `;
 
 const ListItem = styled.li`
 width: 50%;
 margin-bottom: 10px;
+cursor: pointer;
 `;
 
 
