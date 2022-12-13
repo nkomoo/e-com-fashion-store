@@ -81,17 +81,14 @@ color: white;
 
 const Button = styled.button`
 text-transform: uppercase;
-background-color: white;
-color: black;
+background-color: black;
+color: white;
 padding: 7px;
 font-size: 20px; 
 cursor: pointer; 
 border: none;
 text-align: center;
 
-&:hover {
-opacity: .4;
-}
 
 `;
 

@@ -59,6 +59,15 @@ const Title = styled.div`
  bottom: 10px;
  align-items: center;
  justify-content: center;
+ text-transform: uppercase;
+ margin-bottom: 10px;
+`;
+
+const Price = styled.div`
+font-weight: bold;
+font-size: 16px;
+position: absolute;
+bottom:0;
 `;
 
 
@@ -67,7 +76,7 @@ function Product({item}) {
    <Container>
 <Image src={item.img} />
 <Info>
-    <Icon>
+    {/* <Icon>
     <ShoppingCartTwoToneIcon />
     </Icon>
     <Icon>
@@ -75,8 +84,9 @@ function Product({item}) {
     </Icon>
     <Icon>
     <FavoriteBorderTwoToneIcon />
-    </Icon>
+    </Icon> */}
     <Title>{item.title}</Title>
+    <Price>{item.price}</Price>
 </Info>
     </Container>
   )

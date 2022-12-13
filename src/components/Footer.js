@@ -3,7 +3,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Container = styled.div`
-display: inline-flex;
+display: flex;
+height: 60vh;
+background-color: rgb(238,237,237);
 `;
 
 const Left = styled.div`
@@ -58,19 +60,19 @@ margin-bottom: 10px;
 `;
 
 
-const ContactItem = styled.div`
-margin-bottom: 20px;
-display: flex;
-align-items: center;
-`;
-
 
 function Footer() {
   return (
    <Container>
     <Left>
-        <Logo>CIAGA.</Logo>
-        <Desc>Insert text here</Desc>
+        <Title>We are Ciaga</Title>
+        <List>
+          <ListItem>About us</ListItem>
+          <ListItem>Ciaga Talks</ListItem>
+          <ListItem>Contact us</ListItem>
+          <ListItem>Newsletter Sign up</ListItem>
+          <ListItem>Student Discount</ListItem>
+          </List>
         <SocialContainer>
 <SocialIcon>
 <InstagramIcon />
@@ -81,26 +83,23 @@ function Footer() {
         </SocialContainer>
     </Left>
     <Center>
-      <Title>Useful Links</Title>
+      <Title>Your Order</Title>
       <List>
-        <ListItem>Man's Fashion</ListItem>
-        <ListItem>Woman's Fashion</ListItem>
-        <ListItem>Accessories</ListItem>
-        <ListItem>My Account</ListItem>
-        <ListItem>Order Tracking</ListItem>
-        <ListItem>Wishlist </ListItem>
-        
-        <ListItem>Terms and Conditions</ListItem>
+        <ListItem>Orders & Delivery</ListItem>
+        <ListItem>Returns & Refunds</ListItem>
+        <ListItem>Product & Stock</ListItem>
+        <ListItem>Pre-order</ListItem>
       </List>
     </Center>
     <Right>
-      <Title>Contact</Title>
-      <ContactItem>
-56 Dove In, South Pacific 93455
-      </ContactItem>
-      <ContactItem>
-+ 132  433 2345
-      </ContactItem>
+      <Title>Quick Links</Title>
+      <List>
+        <ListItem>Terms & Conditions</ListItem>
+        <ListItem>Privacy</ListItem>
+        <ListItem>Klarna</ListItem>
+        <ListItem>Careers</ListItem>
+        
+      </List>
     </Right>
     </Container>
   )

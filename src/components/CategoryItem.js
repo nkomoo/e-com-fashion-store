@@ -42,6 +42,8 @@ font-weight: 600;
 `;
 
 
+
+
 function CategoryItem({item}) {
   return (
     <Container>
